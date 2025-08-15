@@ -1,60 +1,43 @@
 <!DOCTYPE HTML>
-<!--
-  Spectral by HTML5 UP
-  html5up.net | @ajlkn
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
     <title>Élan Fervor — Advanced Anti-Aging Skincare for Smoother, Firmer-Looking Skin</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="Aesthetic, effective anti-aging skincare from Élan Fervor. Gentle Granactive Retinoid, peptide complex, and hyaluronic acid visibly smooth fine lines, firm skin, and hydrate deeply. Shop now." />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 
-    <!-- Élan Fervor brand colors + image overrides -->
+    <!-- Brand colors/styles -->
     <style>
-      :root{
-        --ef-primary:#3A2E2A;   /* deep cocoa */
-        --ef-accent:#C29A7A;    /* warm caramel */
-        --ef-secondary:#EADFD6; /* soft clay */
-        --ef-cream:#FBF7F4;     /* light ivory */
-        --ef-ink:#1A1A1A;       /* near-black */
-      }
-      /* Banner: replace photo with brand gradient */
-      #banner{
-        background-image: linear-gradient(135deg, var(--ef-primary) 0%, var(--ef-accent) 55%, var(--ef-secondary) 100%);
-      }
-      #banner .inner h2, #banner .inner p{ color: var(--ef-cream); }
-      /* Spotlight image boxes now host SVG logo tiles */
-      .spotlight .image{
-        display:flex; align-items:center; justify-content:center;
-        background: var(--ef-cream);
-      }
-      .brand-logo{ width:100%; max-width:520px; height:auto; display:block; }
-      /* Gentle tint behind features section */
-      #three.wrapper.style3{ background-color: var(--ef-cream); }
+      :root{ --ef-red:#C8102E; --ef-black:#000000; --ef-white:#FFFFFF; }
+      /* Banner uses your uploaded JPG */
+      #banner{ background:url('/images/banner.jpg') center/cover no-repeat; }
+      #banner .inner h2,#banner .inner p{ color:var(--ef-white); text-shadow:0 1px 0 rgba(0,0,0,.25); }
+
+      /* Primary buttons = brand red */
+      .button.primary{ background:var(--ef-red); border-color:var(--ef-red); color:#fff !important; }
+      .button.primary:hover{ background:#B50F29; border-color:#B50F29; }
+
+      /* Gentle white bg for features */
+      #three.wrapper.style3{ background:#fff; }
     </style>
   </head>
   <body class="landing is-preload">
-
     <div id="page-wrapper">
 
       <!-- Header -->
       <header id="header" class="alt">
-        <h1><a href="index.html">Élan Fervor</a></h1>
+        <h1><a href="/">Élan Fervor</a></h1>
         <nav id="nav">
           <ul>
             <li class="special">
               <a href="#menu" class="menuToggle"><span>Menu</span></a>
               <div id="menu">
                 <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="generic.html">About</a></li>
-                  <li><a href="elements.html">How To</a></li>
-                  <li><a href="#">Sign Up</a></li>
-                  <li><a href="#">Log In</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/generic.html">About</a></li>
+                  <li><a href="/elements.html">How To</a></li>
                 </ul>
               </div>
             </li>
@@ -70,7 +53,8 @@
           collagen-supporting peptides, and plumping hyaluronic acid to visibly<br />
           soften lines, firm skin, and boost glow.</p>
           <ul class="actions special">
-            <li><a href="#one" class="button primary">Shop Anti-Aging Best Sellers</a></li>
+            <!-- changed to product page -->
+            <li><a href="/glowing-restoring-moisturiser/" class="button primary">Shop Anti-Aging Best Sellers</a></li>
           </ul>
         </div>
         <a href="#one" class="more scrolly">Learn More</a>
@@ -91,54 +75,24 @@
         </div>
       </section>
 
-      <!-- Two (logos instead of stock photos) -->
+      <!-- Two (brand pictures) -->
       <section id="two" class="wrapper alt style2">
         <section class="spotlight">
-          <div class="image">
-            <!-- Logo tile A -->
-            <svg class="brand-logo" viewBox="0 0 960 600" role="img" aria-label="Élan Fervor logo tile">
-              <title>Élan Fervor</title>
-              <defs>
-                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="var(--ef-secondary)"/>
-                  <stop offset="1" stop-color="var(--ef-cream)"/>
-                </linearGradient>
-              </defs>
-              <rect width="960" height="600" rx="36" fill="url(#g1)"/>
-              <circle cx="480" cy="260" r="120" fill="var(--ef-primary)" opacity=".08"/>
-              <text x="480" y="300" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="200" font-weight="700" fill="var(--ef-primary)">ÉF</text>
-              <text x="480" y="440" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="64" font-weight="700" letter-spacing=".18em" fill="var(--ef-ink)">ÉLAN FERVOR</text>
-            </svg>
-          </div>
+          <div class="image"><img src="/images/pic01.jpg" alt="Élan Fervor brand tile — red heart EF with wordmark" /></div>
           <div class="content">
             <h2>Granactive Retinoid: Gentle Power</h2>
             <p>A next-generation vitamin-A derivative that helps reduce the look of wrinkles and uneven tone—designed to be gentler than traditional retinol with less likelihood of irritation.</p>
           </div>
         </section>
-
         <section class="spotlight">
-          <div class="image">
-            <!-- Logo tile B -->
-            <svg class="brand-logo" viewBox="0 0 960 600" role="img" aria-label="Élan Fervor monogram">
-              <rect width="960" height="600" rx="36" fill="var(--ef-accent)"/>
-              <text x="50%" y="56%" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="220" font-weight="700" fill="var(--ef-cream)">ÉF</text>
-            </svg>
-          </div>
+          <div class="image"><img src="/images/pic02.png" alt="Élan Fervor monogram — black on red" /></div>
           <div class="content">
             <h2>Peptide Complex: Firm &amp; Smooth</h2>
             <p>Matrixyl Synthe’6® and Matrixyl® 3000 signal skin to boost key building blocks—including hyaluronic acid and fibronectin—for improved firmness and a smoother appearance.</p>
           </div>
         </section>
-
         <section class="spotlight">
-          <div class="image">
-            <!-- Logo tile C -->
-            <svg class="brand-logo" viewBox="0 0 960 600" role="img" aria-label="Élan Fervor wordmark">
-              <rect width="960" height="600" rx="36" fill="var(--ef-primary)"/>
-              <text x="50%" y="52%" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="90" font-weight="700" letter-spacing=".24em" fill="var(--ef-cream)">ÉLAN FERVOR</text>
-              <text x="50%" y="75%" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="34" fill="var(--ef-secondary)">SKINCARE</text>
-            </svg>
-          </div>
+          <div class="image"><img src="/images/pic03.jpg" alt="Élan Fervor tile — brand red/white/black" /></div>
           <div class="content">
             <h2>Hydration Shield: HA + Squalane + Aloe</h2>
             <p>Hyaluronic acid draws moisture in; squalane absorbs fast without greasiness; aloe soothes and comforts sensitive, dehydrated skin.</p>
@@ -190,30 +144,31 @@
             <p>Upgrade your routine with dermatologist-inspired actives that are gentle and effective.</p>
           </header>
           <ul class="actions stacked">
-            <li><a href="generic.html" class="button fit primary">Shop Now</a></li>
-            <li><a href="elements.html" class="button fit">Learn How to Use</a></li>
+            <!-- changed to product page -->
+            <li><a href="/glowing-restoring-moisturiser/" class="button fit primary">Shop Now</a></li>
+            <li><a href="/elements.html" class="button fit">Learn How to Use</a></li>
           </ul>
         </div>
       </section>
 
-<footer id="footer">
-  <ul class="copyright">
-    <li>&copy; Élan Fervor</li>
-  </ul>
-</footer>
-
-
+      <footer id="footer">
+        <ul class="copyright">
+          <li>&copy; Élan Fervor</li>
+        </ul>
+      </footer>
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.scrollex.min.js"></script>
+    <script src="/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
+
+
 
 
