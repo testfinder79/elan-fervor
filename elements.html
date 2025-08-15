@@ -5,33 +5,34 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="How to use Élan Fervor: a simple routine that pairs Granactive Retinoid, peptides, and hyaluronic acid for smoother, hydrated, radiant skin." />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
     <style>
-      :root{ --ef-primary:#3A2E2A; --ef-accent:#C29A7A; --ef-secondary:#EADFD6; --ef-cream:#FBF7F4; }
-      article#main > header{
-        background-image: linear-gradient(135deg, var(--ef-secondary), var(--ef-cream));
-        color:#111;
+      :root{ --ef-red:#C8102E; --ef-black:#000; --ef-white:#fff; }
+      article#main>header{
+        background: radial-gradient(80% 80% at 50% 40%, #C8102E 0%, #9E0F23 55%, #000 100%);
+        color:var(--ef-white); text-shadow:0 1px 0 rgba(0,0,0,.25);
       }
-      article#main > header h2{ color:#111; }
+      article#main>header h2{ color:var(--ef-white); }
+      .button.primary{ background:var(--ef-red); border-color:var(--ef-red); color:#fff !important; }
+      .button.primary:hover{ background:#B50F29; border-color:#B50F29; }
+      .cta{ text-align:center; margin:2rem 0 0; }
     </style>
   </head>
   <body class="is-preload">
     <div id="page-wrapper">
 
       <header id="header">
-        <h1><a href="index.html">Élan Fervor</a></h1>
+        <h1><a href="/">Élan Fervor</a></h1>
         <nav id="nav">
           <ul>
             <li class="special">
               <a href="#menu" class="menuToggle"><span>Menu</span></a>
               <div id="menu">
                 <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="generic.html">About</a></li>
-                  <li><a href="elements.html">How To</a></li>
-                  <li><a href="#">Sign Up</a></li>
-                  <li><a href="#">Log In</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/generic.html">About</a></li>
+                  <li><a href="/elements.html">How To</a></li>
                 </ul>
               </div>
             </li>
@@ -44,6 +45,7 @@
           <h2>How to Use Élan Fervor</h2>
           <p>Make the most of your actives with this simple routine.</p>
         </header>
+
         <section class="wrapper style5">
           <div class="inner">
 
@@ -73,47 +75,24 @@
               <div class="table-wrapper">
                 <table>
                   <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>What it does</th>
-                      <th>Star benefit</th>
-                    </tr>
+                    <tr><th>Name</th><th>What it does</th><th>Star benefit</th></tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>Granactive Retinoid</td>
-                      <td>Supports collagen &amp; refines tone</td>
-                      <td>Gentler than classic retinol</td>
-                    </tr>
-                    <tr>
-                      <td>Matrixyl Synthe’6®</td>
-                      <td>Peptide for firmness &amp; wrinkle smoothing</td>
-                      <td>Boosts key skin components</td>
-                    </tr>
-                    <tr>
-                      <td>Hyaluronic Acid</td>
-                      <td>Water-binding humectant</td>
-                      <td>Intense, lasting hydration</td>
-                    </tr>
-                    <tr>
-                      <td>Coenzyme Q10</td>
-                      <td>Antioxidant</td>
-                      <td>Helps protect from free-radical damage</td>
-                    </tr>
-                    <tr>
-                      <td>Squalane</td>
-                      <td>Lightweight emollient</td>
-                      <td>Non-greasy moisture, fast absorption</td>
-                    </tr>
-                    <tr>
-                      <td>Aloe</td>
-                      <td>Soothing botanical</td>
-                      <td>Calms and comforts skin</td>
-                    </tr>
+                    <tr><td>Granactive Retinoid</td><td>Supports collagen &amp; refines tone</td><td>Gentler than classic retinol</td></tr>
+                    <tr><td>Matrixyl Synthe’6®</td><td>Peptide for firmness &amp; wrinkle smoothing</td><td>Boosts key skin components</td></tr>
+                    <tr><td>Hyaluronic Acid</td><td>Water-binding humectant</td><td>Intense, lasting hydration</td></tr>
+                    <tr><td>Coenzyme Q10</td><td>Antioxidant</td><td>Helps protect from free-radical damage</td></tr>
+                    <tr><td>Squalane</td><td>Lightweight emollient</td><td>Non-greasy moisture, fast absorption</td></tr>
+                    <tr><td>Aloe</td><td>Soothing botanical</td><td>Calms and comforts skin</td></tr>
                   </tbody>
                 </table>
               </div>
             </section>
+
+            <!-- CTA added; goes to product page -->
+            <p class="cta">
+              <a class="button primary" href="/glowing-restoring-moisturiser/">Shop Now</a>
+            </p>
 
             <section>
               <h4>FAQ</h4>
@@ -127,39 +106,24 @@
         </section>
       </article>
 
-<footer id="footer">
-  <ul class="copyright">
-    <li>&copy; Élan Fervor</li>
-  </ul>
-</footer>
+      <footer id="footer">
+        <ul class="copyright">
+          <li>&copy; Élan Fervor</li>
+        </ul>
+      </footer>
+    </div>
 
-
-    <!-- FAQ schema for richer results -->
+    <!-- FAQ schema -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Can sensitive skin use retinoids?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes — start slowly (3–4 nights/week) and buffer with moisturizer. Granactive Retinoid is formulated to be gentler than traditional retinol."
-        }
-      }]
-    }
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can sensitive skin use retinoids?","acceptedAnswer":{"@type":"Answer","text":"Yes — start slowly (3–4 nights/week) and buffer with moisturizer. Granactive Retinoid is formulated to be gentler than traditional retinol."}}]}
     </script>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.scrollex.min.js"></script>
+    <script src="/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
-
-
-
-
