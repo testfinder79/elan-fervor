@@ -5,32 +5,34 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="Learn how Élan Fervor blends Granactive Retinoid, peptides, hyaluronic acid, antioxidants, and botanicals to deliver gentle, effective anti-aging skincare." />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
     <style>
-      :root{ --ef-primary:#3A2E2A; --ef-accent:#C29A7A; --ef-secondary:#EADFD6; --ef-cream:#FBF7F4; }
-      article#main > header{ 
-        background-image: linear-gradient(135deg, var(--ef-secondary), var(--ef-cream));
-        color:#111;
+      :root{ --ef-red:#C8102E; --ef-black:#000; --ef-white:#fff; }
+      /* Brand header gradient (works even without header image) */
+      article#main>header{
+        background: radial-gradient(80% 80% at 50% 40%, #C8102E 0%, #9E0F23 55%, #000 100%);
+        color:var(--ef-white); text-shadow:0 1px 0 rgba(0,0,0,.25);
       }
-      article#main > header h2{ color:#111; }
+      article#main>header h2{ color:var(--ef-white); }
+      .button.primary{ background:var(--ef-red); border-color:var(--ef-red); color:#fff !important; }
+      .button.primary:hover{ background:#B50F29; border-color:#B50F29; }
     </style>
   </head>
   <body class="is-preload">
     <div id="page-wrapper">
+
       <header id="header">
-        <h1><a href="index.html">Élan Fervor</a></h1>
+        <h1><a href="/">Élan Fervor</a></h1>
         <nav id="nav">
           <ul>
             <li class="special">
               <a href="#menu" class="menuToggle"><span>Menu</span></a>
               <div id="menu">
                 <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="generic.html">About</a></li>
-                  <li><a href="elements.html">How To</a></li>
-                  <li><a href="#">Sign Up</a></li>
-                  <li><a href="#">Log In</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/generic.html">About</a></li>
+                  <li><a href="/elements.html">How To</a></li>
                 </ul>
               </div>
             </li>
@@ -59,29 +61,28 @@
               <li><strong>Botanical Allies</strong> like chamomile, rosehip, sea buckthorn, geranium, and more to nourish and calm.</li>
             </ul>
 
-            <p>Every formula is designed to slot into your routine easily—lightweight, fast-absorbing, and effective from the first touch.</p>
+            <!-- Optional CTA with brand color and correct link -->
+            <p style="margin-top:1.5rem">
+              <a class="button primary" href="/glowing-restoring-moisturiser/">Shop Now</a>
+            </p>
 
           </div>
         </section>
       </article>
 
-<footer id="footer">
-  <ul class="copyright">
-    <li>&copy; Élan Fervor</li>
-  </ul>
-</footer>
+      <footer id="footer">
+        <ul class="copyright">
+          <li>&copy; Élan Fervor</li>
+        </ul>
+      </footer>
+    </div>
 
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.scrollex.min.js"></script>
+    <script src="/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
-
-
-
-
